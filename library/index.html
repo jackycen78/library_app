@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <span id='pageTitle'> My Library </span>  
+
+    <button id='addBookBtn'>Add Book</button>
+
+    <div id='statsCounter'></div>
+
+    <hr>
+  
+
+    <!-- Add Book Modal-->
+    <div id='addBookModal' class='modal'>
+        <!-- Book Modal Content -->
+        <div class='modal-content'>
+            <div class='modalTitle'>Add a New Book <span class="close"> &times; </span></div> 
+            
+  
+            <input id='titleInput' type="text" placeholder="Title">
+            <div class='errorText' id='titleError'>* Please enter a book title</div>
+
+            <input id='authorInput' type="text" placeholder="Author">
+            <div class='errorText' id = 'authorError'>* Please enter a book author</div>
+
+            <input id='pagesInput' type="text" placeholder="Number of Pages">
+            <div class='errorText' id='pagesError'>* Please enter a numeric page number</div>
+
+            <div class='radioContainer'>
+                    <input type="radio" name="status" id='notRead' value='Not Read'>
+                    <label for="Not Read">Not Read</label>
+              
+                    <input type="radio" name="status" id='inProgress' value='In Progress'>
+                    <label for="In Progress">In Progress</label>
+                
+                    <input type="radio" name="status" id='read' value='Read'> 
+                    <label for="Read">Read</label>    
+            </div>
+
+            <div class='errorText' id='statusError'>* Please select an option</div>
+
+            <button id='addBookBtn2'> Add Book</button>
+
+        </div>
+    </div>
+
+
+    <!-- Books List -->
+    <div id='bookList'>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
